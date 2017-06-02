@@ -60,7 +60,7 @@ public class ChambreController {
         chambreService.save(chambre);
         
         //redirection sur liste
-        return "/chambre/modifier";
+        return "/chambre/lister";
     }
     
     @RequestMapping(value = "/modifier/{idChambre}", method = RequestMethod.GET)
@@ -71,6 +71,7 @@ public class ChambreController {
         
         //modification
         model.addAttribute(chambre);
+        model.addAttribute("hotels", hotelService.findAll());
         
         return "/chambre/modifier.jsp";
     }

@@ -25,8 +25,8 @@
                         <td>${ch.prix}</td>
                         <td>${ch.hotel.nom}</td>
                         <td>
-                            <a href='<spring:url value="/chambre/supprimer/${h.id}"/>'>Supprimer</a>
-                            <a href='<spring:url value="/chambre/modifier/${h.id}"/>'>Modifier</a>
+                            <a href='<spring:url value="/chambre/supprimer/${ch.id}"/>'>Supprimer</a>
+                            <a href='<spring:url value="/chambre/modifier/${ch.id}"/>'>Modifier</a>
                         </td>
                     </tr>
                 </c:forEach>

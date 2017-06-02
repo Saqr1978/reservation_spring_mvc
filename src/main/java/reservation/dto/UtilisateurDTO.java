@@ -31,5 +31,4 @@ public class UtilisateurDTO {
         this.motDePasse = motDePasse;
     }
     
-    
 }
